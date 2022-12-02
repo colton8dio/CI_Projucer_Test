@@ -1,0 +1,11 @@
+# build artifacts
+Builds/
+JuceLibraryCode/
+
+modules/
+
+# IDE settings
+
+
+# Mac extras
+.DS_Store
