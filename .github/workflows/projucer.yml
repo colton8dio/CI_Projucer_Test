@@ -12,6 +12,10 @@ jobs:
     name: Build plugin with Projucer
     runs-on: [self-hosted, macOS]
     steps:
+    - name: xcode check
+    - uses: xcversion installed
+
+    - name: xcode setup
     - uses: maxim-lobanov/setup-xcode@v1
       with:
         xcode-version: latest-stable
