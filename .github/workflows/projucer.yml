@@ -12,8 +12,7 @@ jobs:
     if: contains(toJson(github.event.commits), '***NO_CI***') == false && contains(toJson(github.event.commits), '[ci skip]') == false && contains(toJson(github.event.commits), '[skip ci]') == false
     name: Build plugin with Projucer on ${{ matrix.os }}
     runs-on: self-hosted
-    jucer: "modules/JUCE/extras/Projucer/Builds/MacOSX/build/Debug/Projucer.app/Contents/MacOS/Projucer"
-    clap_gen: "Xcode"
+
 
 
     steps:
@@ -40,7 +39,6 @@ jobs:
         PROJUCER: ${{ matrix.jucer }}
 
     - name: Build Plugin (MacOS)
-      if: runner.os == 'MacOS'
       shell: bash
       run: xcodebuild -project SimplePlugin.xcodeproj -jobs 4 | xcpretty
       working-directory: Builds/MacOSX
