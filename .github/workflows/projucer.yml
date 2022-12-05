@@ -36,7 +36,7 @@ jobs:
 
     - name: Resave jucer
       shell: bash
-      run: $PROJUCER --resave CI_Projucer_Test.jucer
+      run: /Applications/Projucer.app/Contents/MacOS/Projucer --resave CI_Projucer_Test.jucer
       env:
         PROJUCER: ${{ matrix.jucer }}
 
