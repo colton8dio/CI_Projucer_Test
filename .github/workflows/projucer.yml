@@ -42,5 +42,5 @@ jobs:
 
     - name: Build Plugin (MacOS)
       shell: bash
-      run: xcodebuild -project CI_Projucer_Test.xcodeproj -jobs 4 | xcpretty
+      run: xcodebuild -project AudioAppDemo.xcodeproj -jobs 4 | xcpretty
       working-directory: Builds/MacOSX
