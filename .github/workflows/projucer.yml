@@ -32,7 +32,7 @@ jobs:
     - name: Build Projucer (MacOS)
       shell: bash
       run: xcodebuild -project Projucer.xcodeproj -jobs 4 | xcpretty
-      working-directory: modules/JUCE/extras/Projucer/Builds/MacOSX
+      working-directory: JUCE/extras/Projucer/Builds/MacOSX
 
     - name: Resave jucer
       shell: bash
