@@ -2,7 +2,7 @@
 
 <JUCERPROJECT name="AudioAppDemo" companyName="JUCE" version="1.0.0" userNotes="Simple audio application."
               companyWebsite="http://juce.com" displaySplashScreen="1" defines="PIP_JUCE_EXAMPLES_DIRECTORY=L1VzZXJzL0NvbHRvbkRvZGQvQXBwbGljYXRpb25zL0pVQ0UvZXhhbXBsZXM="
-              projectType="guiapp" useAppConfig="0" addUsingNamespaceToJuceHeader="1"
+              projectType="audioplug" useAppConfig="0" addUsingNamespaceToJuceHeader="1"
               id="L5chaC" jucerFormatVersion="1">
   <MAINGROUP id="BbBRmD" name="AudioAppDemo">
     <GROUP id="{0154D469-4401-C437-2E6D-8BAA80C0C37C}" name="Source">
