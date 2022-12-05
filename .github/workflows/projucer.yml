@@ -36,11 +36,11 @@ jobs:
 
     - name: Resave jucer
       shell: bash
-      run: $PROJUCER --resave SimplePlugin.jucer
+      run: $PROJUCER --resave CI_Projucer_Test.jucer
       env:
         PROJUCER: ${{ matrix.jucer }}
 
     - name: Build Plugin (MacOS)
       shell: bash
-      run: xcodebuild -project SimplePlugin.xcodeproj -jobs 4 | xcpretty
+      run: xcodebuild -project CI_Projucer_Test.xcodeproj -jobs 4 | xcpretty
       working-directory: Builds/MacOSX
