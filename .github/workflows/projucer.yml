@@ -46,21 +46,9 @@ jobs:
       working-directory: Builds/MacOSX
 
 
-    - name: Build Plugin (MacOS VST)
-      shell: bash
-      run: xcodebuild -scheme "AudioPluginDemo - VST" | xcpretty
-      working-directory: Builds/MacOSX
-
-
     - name: Build Plugin (MacOS AU)
       shell: bash
       run: xcodebuild -scheme "AudioPluginDemo - AU" | xcpretty
-      working-directory: Builds/MacOSX
-
-
-    - name: Build Plugin (MacOS AAX)
-      shell: bash
-      run: xcodebuild -scheme "AudioPluginDemo - AAX" | xcpretty
       working-directory: Builds/MacOSX
 
 
