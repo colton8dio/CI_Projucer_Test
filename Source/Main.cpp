@@ -65,4 +65,4 @@ private:
 };
 
 //==============================================================================
-START_JUCE_APPLICATION (Application)
+JUCE_USE_CUSTOM_PLUGIN_STANDALONE_APP=1
