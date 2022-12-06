@@ -65,4 +65,4 @@ private:
 };
 
 //==============================================================================
-JUCE_USE_CUSTOM_PLUGIN_STANDALONE_APP=1
+JUCE_USE_CUSTOM_PLUGIN_STANDALONE_APP=1;
