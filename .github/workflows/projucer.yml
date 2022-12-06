@@ -42,5 +42,5 @@ jobs:
 
     - name: Build Plugin (MacOS)
       shell: bash
-      run: xcodebuild -scheme AudioAppDemo - VST3 | xcpretty
+      run: xcodebuild -scheme "AudioAppDemo - VST3" | xcpretty
       working-directory: Builds/MacOSX
