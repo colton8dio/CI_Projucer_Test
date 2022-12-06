@@ -27,7 +27,7 @@ jobs:
       uses: actions/checkout@v2
       with:
           repository: juce-framework/JUCE
-          path: ${{runner.workspace}}/CI_Prowjucer_Test/JUCE
+          path: ${{runner.workspace}}/CI_Projucer_Test/JUCE
 
     - name: Build Projucer (MacOS)
       shell: bash
