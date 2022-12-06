@@ -40,7 +40,31 @@ jobs:
       env:
         PROJUCER: ${{ matrix.jucer }}
 
-    - name: Build Plugin (MacOS)
+    - name: Build Plugin (MacOS VST3)
       shell: bash
       run: xcodebuild -scheme "AudioPluginDemo - VST3" | xcpretty
+      working-directory: Builds/MacOSX
+
+
+    - name: Build Plugin (MacOS VST)
+      shell: bash
+      run: xcodebuild -scheme "AudioPluginDemo - VST" | xcpretty
+      working-directory: Builds/MacOSX
+
+
+    - name: Build Plugin (MacOS AU)
+      shell: bash
+      run: xcodebuild -scheme "AudioPluginDemo - AU" | xcpretty
+      working-directory: Builds/MacOSX
+
+
+    - name: Build Plugin (MacOS AAX)
+      shell: bash
+      run: xcodebuild -scheme "AudioPluginDemo - AAX" | xcpretty
+      working-directory: Builds/MacOSX
+
+
+    - name: Build Plugin (MacOS Standalone)
+      shell: bash
+      run: xcodebuild -scheme "AudioPluginDemo - Standalone Plugin" | xcpretty
       working-directory: Builds/MacOSX
